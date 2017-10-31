@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Тисов](https://up.htmlacademy.ru/htmlcss/19/user/535477).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Горбачев`(https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
