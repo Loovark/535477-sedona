@@ -5,8 +5,117 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header>
+      <nav>
+        <ul class="main-nav">
+          <li href="#">Информация</li>
+          <li href="#">Фото и видео</li>
+          <li href="#">Карта штата</li>
+          <li href="#">Гостиницы</li>
+        </ul>
+        <img class="mini-logo" src="#" alt="City of Sedona">
+      </nav>
+      <div class="main-logo">
+        <img class="logo" src="#" alt="SEDONA">
+      </div>
+    </header>
+    <main>
+      <section class=features>
+        <div class="block title">
+          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <div class="block top-block">
+          <div class="reason reason-one">
+            <h3>Настоящий городок</h3>
+            <p>- №1 -</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="photo">
+            <img src="#">
+          </div>
+        </div>
+        <div class="block recommendations">
+          <div class="recommendation">
+            <img src="#">
+            <h3>Жилье</h3>
+            <p>Рекоммендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="recommendation">
+            <img src="#">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочеруетесь!</p>
+          </div>
+          <div class="recommendation">
+            <img src="#">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но местного производства!</p>
+          </div>
+        </div>
+        <div class="block middle-block">
+          <div class="photo">
+            <img src="#">
+          </div>
+          <div class="reason reason-two">
+            <h3>Там есть Мост Дьявола</h3>
+            <p>- №2 -</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+        </div>
+        <div class="block bottom-block">
+          <div class="reason reason-three">
+            <h3>Небольшая площадь</h3>
+            <p>- №3 -</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="reason reason-four">
+            <h3>Красивая дорога</h3>
+            <p>- №4 -</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="reason reason-five">
+            <h3>Мало туристов</h3>
+            <p>- №5 -</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <div class="block search-title">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="block map">
+          <a href="#">Map</a>
+        </div>
+        <div class="form">
+          <form action="#" method="get">
+            <h3>Поиск гостиницы в Седоне</h3>
+            <label for="arrival">Дата заезда:</label>
+            <input type="date" name="arrival" id="arrival" value="24 апреля 2017">
+            <label for="departure">Дата выезда:</label>
+            <input type="date" name="departure" id="departure" value="4 июля 2017">
+            <label for="adult">Взрослые:</label>
+            <input type="text" name="adult" id="adult" value="2">
+            <label for="children">Дети:</label>
+            <input type="text" name="children" id="children" value="0">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="hashtag">
+        <p>#visitsedona</p>
+      </div>
+      <div class="links">
+        <a href="#"><img class="tw" src="#" alt="twitter"></a>
+        <a href="#"><img class="fb" src="#" alt="facebook"></a>
+        <a href="#"><img class="yt" src="#" alt="youtube"></a>
+      </div>
+      <div class="develop">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/"><img class="html-logo" src="#" alt="HTML academy"></a>
+      </div>
+    </footer>
   </body>
 </html>
