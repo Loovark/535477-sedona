@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона - Гостиницы</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-menu">
+          <li class="menu-item"><a href="#">Информация</a></li>
+          <li class="menu-item"><a href="#">Фото и видео</a></li>
+          <li class="menu-item"><a href="#">Карта штата</a></li>
+          <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <figure class="index-logo">
+        <img class="index-logo-picture" src="img/top-logo.svg" alt="Логотип City of Sedona" width="50" height="30">
+      </figure>
+    </header>
+
+    <main class="container">
+      <h1 class="visually-hidden">Гостиницы в Седоне</h1>
+      <section class="filter-form">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <!-- Возможно, что задний фон с изображением будет задан в CSS -->
+        <!-- Здесь будет форма -->
+      </section>
+      <section class="sorting">
+        <p class="result">Найдено: 3</p>
+        <ul class="sorting-options">
+          <b class="sorting-title">Сортировка:</b>
+          <li class="sorting-kind"><a class="selected-sorting" href="#">По цене</a></li>
+          <li class="sorting-kind"><a href="#">По типу</a></li>
+          <li class="sorting-kind"><a href="#">По рейтингу</a></li>
+        </ul>
+        <ul class="sorting-direction">
+          <li class="sorting-increase"><a href="#">По-возрастанию</a></li>
+          <li class="sorting-descending"><a class="selected-sorting" href="#">По-убыванию</a></li>
+          <!-- Надписи будут скрыты и заменены на декоративные иконки -->
+        </ul>
+      </section>
+      <section class="hotels">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="hotels-list">
+
+          <li class="hotel-info">
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <img class="hotel-photo" src="img/amara.svg" alt="Фото гостиницы">
+            <p class="type-price">
+              <span class="hotel-type">Гостиница</span>
+              <span class="hotel-price">От 4000 р.</span>
+            </p>
+            <a class="button about" href="#">Подробнее</a>
+            <a class="button book" href="#">Забронировать</a>
+            <p class="rating">
+              <span class="rating-stars">****</span>
+              <span class="rating-value">Рейтинг: 8,5</span>
+            </p>
+          </li>
+
+          <li class="hotel-info">
+            <h3 class="hotel-name">Desert Quail Inn</h3>
+            <img class="hotel-photo" src="img/desert-quail.svg" alt="Фото гостиницы">
+            <p class="type-price">
+              <span class="hotel-type">Мотель</span>
+              <span class="hotel-price">От 3000 р.</span>
+            </p>
+            <a class="button about" href="#">Подробнее</a>
+            <a class="button book" href="#">Забронировать</a>
+            <p class="rating">
+              <span class="rating-stars">***</span>
+              <span class="rating-value">Рейтинг: 8,9</span>
+            </p>
+          </li>
+
+          <li class="hotel-info">
+            <h3 class="hotel-name">Villas At Poco Diablo</h3>
+            <img class="hotel-photo" src="img/poco-diablo.svg" alt="Фото гостиницы">
+            <p class="type-price">
+              <span class="hotel-type">Апартаменты</span>
+              <span class="hotel-price">От 2000 р.</span>
+            </p>
+            <a class="button about" href="#">Подробнее</a>
+            <a class="button book" href="#">Забронировать</a>
+            <p class="rating">
+              <span class="rating-stars">**</span>
+              <span class="rating-value">Рейтинг: 9,2</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="hashtag" href="#">#visitsedona</a>
+      <ul class="footer-social">
+          <li><a clsss="social-button" href="#">Twitter</a></li>
+          <li><a clsss="social-button" href="#">Facebook</a></li>
+          <li><a clsss="social-button" href="#">YouTube</a></li>
+      </ul>
+      <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="html-logo" src="img/copyright-logo.svg" alt="Логотип">html academy</a>
+          <!-- Насчет логотипа академии - возможо он будет задан через CSS как декоративный элемент, тогда тег img надо будет уалить -->
+      </p>
+    </footer>
+  </body>
+</html>
