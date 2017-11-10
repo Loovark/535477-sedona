@@ -15,7 +15,7 @@
         </ul>
       </nav>
       <figure class="index-logo">
-        <img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70">
+        <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
       </figure>
     </header>
 
@@ -100,7 +100,35 @@
     </footer>
 
     <section class="search-form">
-      <!-- Тут будет форма поиска -->
+      <form class="search-hotel" action="#" method="post">
+        <p class="search-item">
+          <label for="arrival-id">Дата заезда:</label>
+          <input id="arrival-id" type="text" name="arrival-date" value="24 апреля 2017" placeholder="Укажите дату">
+          <button type="button" class="calendar"><!-- Тут будет иконка календаря согласно ТЗ --></button>
+        </p>
+        <p class="search-item">
+          <label for="departure-id">Дата выезда:</label>
+          <input id="departure-id" type="text" name="departure-date" value="4 июля 2017" placeholder="Укажите дату">
+          <button type="button" class="calendar"><!-- Тут будет иконка календаря согласно ТЗ --></button>
+        </p>
+        <p class="search-item">
+          <label for="adult-id">Взрослые:</label>
+          <button type="button" class="button-minus">-</button>
+          <input id="adult-id" type="text" name="adult-number" value="2" placeholder="0">
+          <button type="button" class="button-plus">+</button>
+        </p>
+        <p class="search-item">
+          <label for="children-id">Дети:</label>
+          <button type="button" class="button-minus">-</button>
+          <input id="children-id" type="text" name="children-number" value="0" placeholder="0">
+          <button type="button" class="button-plus">+</button>
+          <!-- Пока не знаю как прикрутить баттоны к инпуту, чтобы можно было изменять значение
+          Другой вариант:
+          <input id="children-id" type="number" name="children-number" value="0" placeholder="0">
+          Но тут вопрос - как убрать стрелки вверх и вниз и переназначить на баттоны?
+          -->
+        </p>
+      </form>
     </section>
 
   </body>
