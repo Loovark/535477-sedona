@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - Гостиницы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="hotels-page">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-menu">
           <li class="menu-item"><a href="#">Информация</a></li>
           <li class="menu-item"><a href="#">Фото и видео</a></li>
           <li class="menu-item"><a href="#">Карта штата</a></li>
-          <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
+          <li class="menu-item current-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
       <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
@@ -63,7 +66,7 @@
               <span class="limiter min-limiter"><!-- Тут будет .svg с ползунком --></span>
               <span class="limiter max-limiter"><!-- Тут будет .svg с ползунком --></span>
             </div>
-            <button class="show-button" type="button" name="show-button">Найти</button>
+            <button class="show-button" type="button" name="show-button">Показать</button>
           </section>
         </form>
       </section>
@@ -148,12 +151,12 @@
     <footer class="page-footer">
       <a class="hashtag" href="#">#visitsedona</a>
       <ul class="footer-social"><!-- Иконки сохранены в .svg -->
-          <li><a clsss="social-button" href="#">Twitter</a></li>
-          <li><a clsss="social-button" href="#">Facebook</a></li>
-          <li><a clsss="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
       </ul>
       <p class="footer-copyright">
-          <b>Website by</b>
+          <span class="copyright-text">Website by</span>
           <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
           <!-- Логотип в .svg будет задан через CSS как декоративный элемент -->
       </p>
