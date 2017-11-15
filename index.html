@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - Главная страница</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -14,9 +17,7 @@
           <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <figure class="index-logo">
-        <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
-      </figure>
+      <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
     </header>
 
     <main class="container">
@@ -27,7 +28,8 @@
         <!-- Здесь баннер вставлен целой картинкой, для резиновой верстки сохранил все элементы по отдельности -->
       </section>
       <section class="slogan">
-        <h2 class="top-slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="visually-hidden">Информация о городе Седона.</h2>
+        <h3 class="top-slogan" >Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p class="text-slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <ul class="reasons">
@@ -79,7 +81,7 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button open-serch" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button open-search" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <img class="map" src="img/map.jpg" alt="Карта" width="1199,96" height="593,99">
       <!-- Карта сделана картинкой, в идеале надо будет добавить интеркативную на JS -->
@@ -88,12 +90,12 @@
     <footer class="page-footer">
       <a class="hashtag" href="#">#visitsedona</a>
       <ul class="footer-social"><!-- Иконки сохранены в .svg -->
-          <li><a clsss="social-button" href="#">Twitter</a></li>
-          <li><a clsss="social-button" href="#">Facebook</a></li>
-          <li><a clsss="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
       </ul>
       <p class="footer-copyright">
-          <b>Website by</b>
+          <span class="copyright-text">Website by</span>
           <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
           <!-- Логотип в .svg будет задан через CSS как декоративный элемент -->
       </p>
@@ -128,6 +130,7 @@
           Но тут вопрос - как убрать стрелки вверх и вниз и переназначить на баттоны?
           -->
         </p>
+        <a class="search-button" href="#">Найти</a>
       </form>
     </section>
 
