@@ -19,10 +19,53 @@
 
     <main class="container">
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
-      <section class="filter-form">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- Фон сохранен, будет задан позже -->
-        <!-- Здесь будет форма -->
+        <form class="filter-form" action="#" method="post">
+          <ul class="filter-list infrastructure">
+            <h3 class="filter-title">Инфраструктура:</h3>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="pool-checkbox" id="pool-id" checked>
+              <label for="pool-id" class="checkbox-label">Бассейн</label>
+            </li>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="parking-checkbox" id="parking-id">
+              <label for="parking-id" class="checkbox-label">Парковка</label>
+            </li>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="wifi-checkbox" id="wifi-id">
+              <label for="wifi-id" class="checkbox-label">Wi-Fi</label>
+            </li>
+          </ul>
+          <ul class="filter-list type-list">
+            <h3 class="filter-title">Тип жилья:</h3>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="hotel-checkbox" id="hotel-id" checked>
+              <label for="hotel-id" class="checkbox-label">Гостиница</label>
+            </li>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="motel-checkbox" id="motel-id" checked>
+              <label for="motel-id" class="checkbox-label">Мотель</label>
+            </li>
+            <li class="check-item">
+              <input class="checkbox" type="checkbox" name="apartments-checkbox" id="apartments-id" checked>
+              <label for="apartments-id" class="checkbox-label">Апартаменты</label>
+            </li>
+          </ul>
+          <section class="price-select">
+            <h3 class="filter-title">Стоимость в сутки (Р):</h3>
+            <div class="price-filter">
+              <label class="range-label" for="price-id">
+                <span class="min-price">От 0</span>
+                <span class="max-price">До 3000</span>
+              </label>
+              <input type="range" name="price-range" value="" class="price-range" min="0" max="3000">
+              <span class="limiter min-limiter"><!-- Тут будет .svg с ползунком --></span>
+              <span class="limiter max-limiter"><!-- Тут будет .svg с ползунком --></span>
+            </div>
+            <button class="show-button" type="button" name="show-button">Найти</button>
+          </section>
+        </form>
       </section>
       <section class="sorting">
         <p class="result">Найдено: 3</p>
