@@ -133,7 +133,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.social-button:link {
+.social-button:hover {
   background-color: #669ec0;
 }
 
@@ -233,11 +233,128 @@ h3 {
 .filter {
   color: #ffffff;
   background-color: #48769a;
-  background-image: url(background-filter.jpg);
-  background-size: 1200px 800px;
+  background-image: url(../img/background-filter.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-title {
   font-size: 16px;
+}
+
+.range-label {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.show-button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.show-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting-options {
+  font-size: 12px;
+  line-height: 63.1px;
+}
+
+.sorting-type {
+  color: #b1b1b1;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-type:hover {
+  color: #81b3d2;
+}
+
+.sorting-type:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sorting-arrow {
+  color: #cacaca;
+}
+
+.sorting-arrow:hover {
+  color: #000000;
+}
+
+.sorting-arrow:active {
+  color: #81b3d2;
+}
+
+.selected-sorting {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotel-name a:hover {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: #cacaca;
+}
+
+.about {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.about:hover {
+  background-color: #669ec0;
+}
+
+.about:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.book {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.book:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.star {
+  color: #81b3d2;
+}
+
+.rating-value {
+  background-color: #f2f2f2;
 }
