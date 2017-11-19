@@ -8,29 +8,31 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-menu">
           <li class="menu-item"><a href="#">Информация</a></li>
           <li class="menu-item"><a href="#">Фото и видео</a></li>
+        </ul>
+        <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
+        <ul class="navigation-menu">
           <li class="menu-item"><a href="#">Карта штата</a></li>
           <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
     </header>
 
-    <main class="container">
-
+    <main class="container main-index">
+      <h1 class="visually-hidden">Седона</h1><!-- Скрытый заголовок -->
       <section class="main-banner">
-        <h1 class="visually-hidden">Седона</h1><!-- Скрытый заголовок -->
-        <img class="banner-photo" src="img/banner.jpg" alt="Sedona" width="1200" height="780">
+        <img class="banner-sedona" src="img/sedona.svg" alt="Welcome to the Sedona" width="458" height="352">
         <!-- Здесь баннер вставлен целой картинкой, для резиновой верстки сохранил все элементы по отдельности -->
       </section>
       <section class="slogan">
-        <h2 class="visually-hidden">Информация о городе Седона.</h2>
-        <h3 class="top-slogan" >Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-        <p class="text-slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h2 class="visually-hidden">Информация о городе Седона.</h2>
+          <h3 class="top-slogan" >Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="text-slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <ul class="reasons">
         <li class="reason reason-one">
@@ -100,6 +102,7 @@
           <!-- Логотип в .svg будет задан через CSS как декоративный элемент -->
       </p>
     </footer>
+
 
     <section class="search">
       <form class="search-form" action="#" method="post">
