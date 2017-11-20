@@ -116,7 +116,7 @@ h3 {
   background-image: url(../img/background.jpg);
   background-size: 1200px 800px;
   background-repeat: no-repeat;
-  background-position: -100px right;
+  background-position: 0px -84px;
 }
 
 .main-banner {
@@ -130,10 +130,21 @@ h3 {
   padding-top: 77px;
 }
 
+.banner-shape {
+  padding-top: 23px;
+}
+
 .slogan {
+  width: 1200px;
+  height: 216px;
   margin: 0;
   padding: 0;
   line-height: 26px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-slogan,
@@ -159,6 +170,16 @@ h3 {
 .reason-five {
   background-color: #eeeeee;
 }
+
+.reason {
+  width: 400px;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .search-title {
   font-size: 30px;
