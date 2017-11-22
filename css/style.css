@@ -490,6 +490,8 @@ h3 {
 .filter {
   width: 1200px;
   min-height: 217px;
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   background-color: #48769a;
   background-image: url(../img/background-filter.jpg);
@@ -499,33 +501,36 @@ h3 {
 }
 
 .filter-form {
-  width: 1200px;
   min-height: 217px;
+  margin: 0;
+  padding: 0 6%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .left-columns {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 72px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .filter-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
-.filter-title {
-  font-size: 16px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.infrastructure {
+  margin-right: 40%;
 }
 
 .check-item {
@@ -533,10 +538,12 @@ h3 {
 }
 
 .price-select {
+  margin: 0;
+  padding: 25px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .price-filter {
@@ -546,12 +553,25 @@ h3 {
   align-items: center;
 }
 
+.filter-title {
+  font-size: 16px;
+  margin: 0;
+  text-align: right;
+}
+
 .range-label {
+  width: 314px;
+  height: 32px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .show-button {
+  width: 133px;
+  height: 32px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -561,6 +581,9 @@ h3 {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .show-button:hover {
@@ -568,15 +591,47 @@ h3 {
   background-color: #ffffff;
 }
 
+.sorting {
+  width: 1200px;
+  height: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-container {
+  width: 1200px;
+  height: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+}
+
 .result {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-options {
   font-size: 12px;
   line-height: 63.1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -30%;
+}
+
+.sorting-kind {
+  margin-left: 10%;
+  white-space: nowrap;
 }
 
 .sorting-type {
@@ -591,6 +646,11 @@ h3 {
 .sorting-type:active {
   color: #000000;
   border-bottom: none;
+}
+
+.sorting-direction {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .sorting-arrow {
@@ -608,6 +668,41 @@ h3 {
 .selected-sorting {
   color: #81b3d2;
   border-bottom: none;
+  padding-left: 10px;
+}
+
+.hotels {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.hotels-list {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.desert-quail {
+  border: inherit;
+}
+
+
+.hotel-info {
+  width: 1200px;
+  height: 152px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .hotel-name {
