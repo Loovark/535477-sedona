@@ -11,14 +11,13 @@
 
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-menu navigation-menu-left">
-          <li class="menu-item"><a href="#">Информация</a></li>
-          <li class="menu-item"><a href="#">Фото и видео</a></li>
-        </ul>
         <a class="top-logo" href="index.html"><img class="index-logo-picture" src="img/top-logo.png" alt="Логотип City of Sedona" width="138" height="70"></a>
-        <ul class="navigation-menu navigation-menu-right">
-          <li class="menu-item"><a href="#">Карта штата</a></li>
-          <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
+        <ul class="navigation-menu">
+          <li class="menu-item navigation-menu-left"><a href="#">Информация</a></li>
+          <li class="menu-item navigation-menu-left"><a href="#">Фото и видео</a></li>
+          <li class="menu-item">
+          <li class="menu-item navigation-menu-right"><a href="#">Карта штата</a></li>
+          <li class="menu-item navigation-menu-right"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -124,13 +123,13 @@
           <button type="button" class="calendar">Кнопка-календарь<!-- Тут будет иконка-кнопка, открывающая календарь согласно ТЗ --></button>
         </p>
         <div class="combining-row">
-          <p class="search-item">
+          <p class="search-item item-adult">
             <label for="adult-id">Взрослые:</label>
             <button type="button" class="button-minus">-</button>
             <input class="search-input guests-number" id="adult-id" type="text" name="adult-number" value="2" placeholder="0">
             <button type="button" class="button-plus">+</button>
           </p>
-          <p class="search-item">
+          <p class="search-item item-children">
             <label for="children-id">Дети:</label>
             <button type="button" class="button-minus">-</button>
             <input class="search-input guests-number" id="children-id" type="text" name="children-number" value="0" placeholder="0">

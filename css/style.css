@@ -32,20 +32,25 @@ h3 {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation {
-  line-height: 26px;
+  width: 1200px;
+  height: 56px;
   font-weight: bold;
   margin: 0;
   padding: 0 6%;
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
 }
 
 .navigation-menu {
   width: 1200px;
-  height: 56px;
+
   margin: 0;
   padding: 0;
   display: flex;
@@ -55,7 +60,6 @@ h3 {
 
 .navigation-menu-left {
   text-align: left;
-  margin-right: 40%;
 }
 
 .navigation-menu-right {
@@ -64,6 +68,7 @@ h3 {
 
 .menu-item {
   width: 20%;
+  margin: 0;
   padding: 0;
   white-space: nowrap;
 }
@@ -160,7 +165,9 @@ h3 {
 .reason-three .reason-comment,
 .reason-four .reason-comment,
 .reason-five .reason-comment,
-.search-text {
+.search-text,
+.hotel-type,
+.hotel-price {
   color: #333333;
 }
 
@@ -383,6 +390,8 @@ h3 {
 }
 
 .search-form {
+  margin: 0;
+  padding: 0;
   width: 568px;
   height: 356px;
   font-family: inherit;
@@ -394,10 +403,13 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .search-input {
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   font-weight: bold;
@@ -416,12 +428,17 @@ h3 {
 }
 
 .date-input {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
   width: 346px;
   height: 38px;
   text-align: center;
 }
 
 .guests-number {
+  margin: 0;
+  padding: 0;
   width: 38px;
   height: 38px;
   text-align: center;
@@ -432,6 +449,7 @@ h3 {
   width: 38px;
   min-height: 38px;
   margin: 0;
+  padding: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -457,8 +475,10 @@ h3 {
 
 
 .combining-row {
+  width: 458;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -680,7 +700,7 @@ h3 {
 
 .hotels-list {
   margin: 0;
-  padding: 0 6%;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -705,10 +725,32 @@ h3 {
   justify-content: flex-start;
 }
 
+.hotel-block {
+  width: 1200px;
+  margin: 0;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-block {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .hotel-name {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+
 }
 
 .hotel-name a:hover {
@@ -719,10 +761,46 @@ h3 {
   color: #cacaca;
 }
 
+.info-columns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.type-about {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-book {
+  margin: 0;
+  margin-left: 6px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-type.
+.hotel-price {
+  margin: 0;
+  padding: 0;
+}
+
 .about {
+  margin-top: 12px;
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about:hover {
@@ -738,6 +816,11 @@ h3 {
   font-weight: bold;
   color: #ffffff;
   background-color: #766357;
+  width: 142px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book:hover {
@@ -749,10 +832,31 @@ h3 {
   background-color: #503e33;
 }
 
+.rating-block {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.rating {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .star {
   color: #81b3d2;
 }
 
 .rating-value {
+  width: 110px;
+  height: 27px;
+  color: #666666;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
 }
