@@ -27,8 +27,8 @@ h3 {
 }
 
 .page-header {
-  width: 1200px;
-  height: 56px;
+  min-width: 1200px;
+  min-height: 56px;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@ h3 {
 
 .navigation {
   width: 1200px;
-  height: 56px;
+  min-height: 56px;
   font-weight: bold;
   margin: 0;
   padding: 0 6%;
@@ -50,12 +50,12 @@ h3 {
 
 .navigation-menu {
   width: 1200px;
-
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation-menu-left {
@@ -67,16 +67,26 @@ h3 {
 }
 
 .menu-item {
-  width: 20%;
+  min-width: 20%;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
+  padding-bottom: 3px;
+}
+
+.relative-left {
+  position: relative;
+  left: 30px;
+}
+
+.relative-right {
+  position: relative;
+  right: 30px;
 }
 
 .top-logo {
   position: absolute;
-  left: 46%;
-  padding: 0;
+  left: 50%;
+  margin-left: -69px;
   z-index: 1;
 }
 
