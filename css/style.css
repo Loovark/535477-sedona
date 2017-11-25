@@ -70,7 +70,7 @@ h3 {
   min-width: 20%;
   margin: 0;
   padding: 0;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .relative-left {
@@ -80,7 +80,7 @@ h3 {
 
 .relative-right {
   position: relative;
-  right: 30px;
+  right: 32px;
 }
 
 .top-logo {
@@ -151,20 +151,32 @@ h3 {
 }
 
 .banner-shape {
-  padding-top: 23px;
+  padding-top: 22px;
 }
 
 .slogan {
   width: 1200px;
-  height: 216px;
+  min-height: 216px;
   margin: 0;
   padding: 0;
   line-height: 26px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.top-slogan {
+  margin-top: 60px;
+  margin-left: 282px;
+  margin-right: 282px;
+  margin-bottom: 0px;
+  padding: 0 93px;
+}
+
+.text-slogan {
+  margin-top: 27px;
 }
 
 .text-slogan,
@@ -184,7 +196,6 @@ h3 {
 .block-container {
   width: 1200px;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
@@ -206,10 +217,6 @@ h3 {
   min-height: 256px;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/town-photo.jpg);
   background-position: center;
   background-size: cover;
@@ -220,13 +227,43 @@ h3 {
   min-height: 256px;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url(../img/bridge-photo.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.reason {
+  width: 400px;
+  min-height: 256px;
+  margin: 0;
+  padding-top: 47px;
+  padding-bottom: 40px;
+  padding-left: 46px;
+  padding-right: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.reason-title {
+  margin: 0;
+  padding: 0 25.5%;
+}
+
+.reason-number {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+}
+
+.reason-comment {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .reason-one,
@@ -241,61 +278,66 @@ h3 {
   background-color: #eeeeee;
 }
 
-.reason {
-  width: 400px;
-  min-height: 256px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.reason-title {
-  width: 40%;
-}
-
-.reason-comment {
-  width: 75%;
+.reason-three .reason-comment,
+.reason-four .reason-comment,
+.reason-five .reason-comment {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .recommendation {
   width: 400px;
-  min-height: 256px;
+  min-height: 330px;
   margin: 0;
+  padding: 0;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.recommendation-2 svg {
+  margin-top: 1px;
+  margin-right: 3px;
+  margin-bottom: 1px;
+}
+
+.recommendation-3 svg {
+  margin-top: -4px;
+}
+
+.recommendation-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
 }
 
 .recommendation-text {
-  width: 75%;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 .search {
   width: 1200px;
   min-height: 291px;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.search-text-block {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
 .search-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: -21px;
   font-size: 30px;
   line-height: 36px;
   display: flex;
@@ -305,6 +347,8 @@ h3 {
 }
 
 .search-text {
+  margin: 0;
+  padding: 0;
   line-height: 24px;
   display: flex;
   flex-direction: column;
@@ -313,17 +357,21 @@ h3 {
 }
 
 .open-search {
+  margin: 0;
+  padding: 0;
   width: 568px;
   min-height: 86px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
   border: none;
   color: #ffffff;
   background-color: #766357;
 }
+
 
 .open-search:hover {
   background-color: #604e43;
@@ -349,31 +397,40 @@ h3 {
 .page-footer {
   width: 1200px;
   min-height: 120px;
+  margin: 0;
+  padding: 0;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .hashtag {
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
 }
 
 .footer-social {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .social-button {
+  width: 46px;
+  height: 48px;
+  margin: 0;
+  margin-right: 6px;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 6px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -387,8 +444,25 @@ h3 {
   background-color: #5496bd;
 }
 
+.footer-copyright {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
 .copyright-text {
+  margin: 0;
+  padding: 0;
+  margin-right: -120px;
   line-height: 26px;
+}
+
+.copyright-link {
+  margin: 0;
+  padding: 0;
+  margin-right: -150px;
 }
 
 .copyright-link:hover {
