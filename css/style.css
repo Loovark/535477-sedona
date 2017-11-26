@@ -322,7 +322,7 @@ h3 {
   padding-right: 14%;
 }
 
-.search {
+.intresting {
   width: 1200px;
   min-height: 291px;
   margin: 0;
@@ -361,7 +361,7 @@ h3 {
   padding: 0;
   width: 568px;
   min-height: 86px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   white-space: nowrap;
@@ -425,6 +425,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-button {
@@ -447,6 +448,10 @@ h3 {
 .social-button:active {
   color: #88b6d1;
   background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
 }
 
 .facebook {
@@ -475,19 +480,24 @@ h3 {
   padding: 0;
 }
 
-.copyright-link:hover {
-  color: #81b3d2;
+.copyright-link:hover path {
+  fill: #81b3d2;
 }
 
-.copyright-link:active {
-  color: #bdbbbc;
+.copyright-link:active path {
+  fill: #bdbbbc;
+}
+
+.search {
+  position: absolute;
+  top: 2169px;
 }
 
 .search-form {
   margin: 0;
-  padding: 0;
+  padding: 55px;
   width: 568px;
-  height: 356px;
+  min-height: 395px;
   font-family: inherit;
   font-size: inherit;
   line-height: 26px;
@@ -495,9 +505,23 @@ h3 {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
   box-sizing: border-box;
+}
+
+.search-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-date {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  width: 458px;
 }
 
 .search-input {
@@ -507,6 +531,7 @@ h3 {
   font-size: inherit;
   line-height: inherit;
   font-weight: bold;
+  text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
 }
@@ -523,11 +548,51 @@ h3 {
 
 .date-input {
   margin: 0;
-  margin-left: 20px;
   padding: 0;
+  padding-left: 12px;
   width: 346px;
   height: 38px;
-  text-align: center;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.calendar {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 477px;
+}
+
+.calendar path {
+  fill: #cacaca;
+}
+
+.calendar:hover path {
+  fill: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
+}
+
+.calendar:active {
+  outline: none;
+}
+
+.combining-row {
+  width: 458px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-children label {
+  margin-right: 27px;
+}
+
+.item-adult label {
+  margin-right: 40px;
 }
 
 .guests-number {
@@ -541,45 +606,42 @@ h3 {
 .button-minus,
 .button-plus {
   width: 38px;
-  min-height: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: bold;
-  color: #a9a9a9;
   background-color: #f2f2f2;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-minus:hover,
 .button-plus:hover,
-.calendar:hover {
+.button-minus:active,
+.button-plus:active {
   outline: none;
-  color: #000000;
+}
+
+.button-minus:hover rect,
+.button-plus:hover rect {
+  fill: #000000;
 }
 
 .button-minus:active,
-.button-plus:active,
-.calendar:active {
+.button-plus:active {
   outline: none;
-  color: #81b3d2;
 }
 
-
-.combining-row {
-  width: 458;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.button-minus:active rect,
+.button-plus:active rect {
+  fill: #81b3d2;
 }
 
 .search-button {
   width: 458px;
   height: 58px;
+  margin-top: 55px;
   font-family: inherit;
   font-size: 21px;
   line-height: inherit;
