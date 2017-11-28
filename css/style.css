@@ -22,6 +22,11 @@ h3 {
   font-size: 21px;
 }
 
+header {
+  box-shadow: -10px 0 10px 2px #dbdbdb,
+              10px 0 10px 2px #dbdbdb;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -761,16 +766,16 @@ h3 {
   margin: 0;
   padding: 0;
   margin-top: 10px;
-  margin-left: 10px;
   width: 320px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
+  margin-left: 2px;
 
-  font-weight: 600;
+  font-weight: bold;
   font-size: 16px;
   line-height: 21px;
 }
@@ -778,8 +783,9 @@ h3 {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
+  margin-left: 2px;
 
   font-size: 0;
 
@@ -802,12 +808,17 @@ h3 {
 
 .price-controls label {
   display: inline-block;
+  margin-top: -4px;
 
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
 
   cursor: pointer;
+}
+
+.max-price {
+  margin-left: -10px;
 }
 
 .price-controls .min-price,
@@ -829,7 +840,8 @@ h3 {
 
 .range-controls {
   position: relative;
-
+  width: 99%;
+  left: 1%;
   margin-bottom: 32px;
 }
 
@@ -861,7 +873,8 @@ h3 {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 6px;
+  height: 6px;
 }
 
 .range-toggle-min {
@@ -873,9 +886,12 @@ h3 {
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 30px;
+  display: flex;
+  justify-content: center;
+  width: 136px;
+  height: 36px;
+  margin: 0;
+  margin-left: 88px;
 
   font-size: 14px;
   line-height: 20px;
@@ -896,30 +912,30 @@ h3 {
 
 .sorting {
   width: 1200px;
-  height: 86px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  min-height: 86px;
   margin: 0;
-  padding: 0;
-}
-
-.sorting-container {
-  width: 1200px;
-  height: 86px;
+  padding: 0 6%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6%;
+  box-sizing: border-box;
+}
+
+.sorting-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .result {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   margin: 0;
   padding: 0;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .sorting-options {
@@ -930,7 +946,6 @@ h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: -230px;
 }
 
 .sorting-kind {
@@ -959,22 +974,23 @@ h3 {
   justify-content: flex-start;
 }
 
-.sorting-arrow {
-  color: #cacaca;
+
+.sorting-arrow:hover path {
+  fill: #000000;
 }
 
-.sorting-arrow:hover {
-  color: #000000;
-}
-
-.sorting-arrow:active {
-  color: #81b3d2;
+.sorting-arrow:active path {
+  fill: #81b3d2;
 }
 
 .selected-sorting {
   color: #81b3d2;
   border-bottom: none;
   padding-left: 10px;
+}
+
+.selected-sorting path {
+  fill: #81b3d2;
 }
 
 .hotels {
@@ -1004,7 +1020,7 @@ h3 {
 
 .hotel-info {
   width: 1200px;
-  height: 152px;
+  min-height: 150px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1021,22 +1037,23 @@ h3 {
 }
 
 .info-block {
+  min-height: 90px;
   margin: 0;
   margin-left: 30px;
   padding: 0;
-  height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .hotel-name {
   margin: 0;
+  margin-top: -3px;
   padding: 0;
   font-size: 21px;
   font-weight: bold;
-
+  vertical-align: top;
 }
 
 .hotel-name a:hover {
@@ -1050,6 +1067,7 @@ h3 {
 .info-columns {
   margin: 0;
   padding: 0;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-start;
 }
@@ -1059,7 +1077,7 @@ h3 {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .price-book {
@@ -1068,7 +1086,7 @@ h3 {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .hotel-type.
@@ -1078,7 +1096,9 @@ h3 {
 }
 
 .about {
-  margin-top: 12px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
   font-weight: bold;
   color: #ffffff;
   background-color: #81b3d2;
@@ -1099,6 +1119,9 @@ h3 {
 }
 
 .book {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
   font-weight: bold;
   color: #ffffff;
   background-color: #766357;
@@ -1125,15 +1148,11 @@ h3 {
 }
 
 .rating {
-  width: 90px;
+  min-height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-end;
-}
-
-.star {
-  color: #81b3d2;
 }
 
 .rating-value {
@@ -1144,5 +1163,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 47px;
+}
+
+.star {
+  margin-right: 1px;
 }
