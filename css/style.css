@@ -26,6 +26,7 @@ h3 {
   max-width: 1200px;
   min-width: 768px;
   box-shadow: 0 10px 10px 5px rgba(219, 219, 219, 0.7);
+  position: relative;
 }
 
 .visually-hidden {
@@ -252,6 +253,7 @@ h3 {
   padding-top: 47px;
   padding-bottom: 40px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -267,45 +269,45 @@ h3 {
 }
 
 .reason-number {
+  display: block;
+  width: 30%;
   margin: 0;
   padding: 0;
   padding-top: 25px;
 }
 
 .reason-comment {
+  display: block;
+  width: 70%;
   margin: 0;
-  padding-top: 20px;
-
+  padding: 20px 0;
 }
 
 .reason-one,
 .reason-two {
   color: #ffffff;
   background-color: #81b3d2;
-  flex-shrink: 0;
+}
+
+.reason-one .reason-comment,
+.reason-two .reason-comment {
+  width: 77%;
 }
 
 .reason-three,
 .reason-four,
 .reason-five {
   background-color: #eeeeee;
-  flex-grow: 1;
-}
-
-.reason-three .reason-comment,
-.reason-four .reason-comment,
-.reason-five .reason-comment {
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .recommendation {
   width: 33%;
-  min-height: 330px;
+  min-height: 329px;
   margin: 0;
   padding: 0;
   padding-top: 60px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -314,7 +316,6 @@ h3 {
 
 .recommendation-2 svg {
   margin-top: 1px;
-  margin-right: 3px;
   margin-bottom: 1px;
 }
 
@@ -323,35 +324,34 @@ h3 {
 }
 
 .recommendation-title {
+  display: block;
+  width: 50%;
   margin: 0;
   padding: 0;
-  padding-top: 29px;
+  margin-top: 28px;
 }
 
 .recommendation-text {
+  display: block;
+  width: 75%;
   margin: 0;
-  padding: 0;
-  padding-top: 23px;
-  padding-left: 14%;
-  padding-right: 14%;
+  padding: 24px 0;
 }
 
 .intresting {
-  width: 1200px;
+  width: 100%;
   min-height: 291px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
 .search-title {
   margin: 0;
   padding: 0;
-  margin-top: 50px;
-  margin-bottom: -21px;
+  margin-top: 48px;
   font-size: 30px;
   line-height: 36px;
   display: flex;
@@ -362,7 +362,8 @@ h3 {
 
 .search-text {
   margin: 0;
-  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 48px;
   line-height: 24px;
   display: flex;
   flex-direction: column;
@@ -371,19 +372,23 @@ h3 {
 }
 
 .open-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 568px;
-  min-height: 86px;
-  font-size: 18px;
+  height: 86px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
   text-transform: uppercase;
-  text-align: center;
   border: none;
   color: #ffffff;
   background-color: #766357;
+  cursor: pointer;
 }
 
 
@@ -397,39 +402,40 @@ h3 {
 }
 
 .map  {
-  width: 1200px;
+  width: 100%;
   min-height: 594px;
   background-image: url(../img/map.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .page-footer {
-  width: 1200px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   min-height: 120px;
+  line-height: 26px;
   margin: 0;
   padding: 0;
-  padding-bottom: 2px;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .hashtag {
   width: 33%;
   margin: 0;
   padding: 0;
-  margin-bottom: 1px;
+  padding-top: 42px;
+  padding-bottom: 48px;
   font-size: 21px;
   font-weight: bold;
   display: flex;
+  flex-grow: 1;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-social {
@@ -437,9 +443,9 @@ h3 {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .social-button {
@@ -448,6 +454,7 @@ h3 {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -477,6 +484,7 @@ h3 {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
@@ -549,16 +557,19 @@ h3 {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
 }
 
 .search-input:hover {
   background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .search-input:focus {
   outline: none;
   background-color: #ffffff;
   border: 2px solid #ebebeb;
+  cursor: pointer;
 }
 
 .date-input {
@@ -569,6 +580,7 @@ h3 {
   height: 38px;
   text-align: left;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .calendar {
@@ -576,18 +588,22 @@ h3 {
   background-color: transparent;
   position: absolute;
   left: 477px;
+  cursor: pointer;
 }
 
 .calendar path {
   fill: #cacaca;
+  cursor: pointer;
 }
 
 .calendar:hover path {
   fill: #000000;
+  cursor: pointer;
 }
 
 .calendar:active path {
   fill: #81b3d2;
+  cursor: pointer;
 }
 
 .calendar:active {
@@ -616,6 +632,13 @@ h3 {
   width: 38px;
   height: 38px;
   text-align: center;
+  cursor: pointer;
+}
+
+.guests-number:focus {
+  width: 38px;
+  height: 38px;
+  border: none;
 }
 
 .button-minus,
@@ -629,6 +652,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .button-minus:hover,
@@ -667,6 +691,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-button:hover {
