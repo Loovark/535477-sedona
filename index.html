@@ -26,7 +26,7 @@
         <h1 class="visually-hidden">Седона</h1><!-- Скрытый заголовок -->
         <section class="main-banner">
           <img class="banner-sedona" src="img/intro.png" alt="Welcome to the Sedona" width="458" height="352">
-          <img class="banner-shape" src="img/shape.png" alt="" width="1200" height="57">
+          <img class="banner-shape" src="img/shape.png" alt="" width="100%" height="57">
         </section>
         <section class="slogan">
             <h2 class="visually-hidden">Информация о городе Седона.</h2>
@@ -110,10 +110,67 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
+          <section class="search">
+            <form class="search-form" action="#" method="post">
+              <p class="search-item search-date">
+                <label for="arrival-id">Дата заезда:</label>
+                <input class="search-input date-input" id="arrival-id" type="text" name="arrival-date" value="24 апреля 2017" placeholder="Укажите дату">
+                <button class="calendar" type="button">
+                  <svg width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg>
+                </button>
+              </p>
+              <p class="search-item search-date">
+                <label for="departure-id">Дата выезда:</label>
+                <input class="search-input date-input" id="departure-id" type="text" name="departure-date" value="4 июля 2017" placeholder="Укажите дату">
+                <button class="calendar" type="button">
+                  <svg width="21" height="22" viewBox="0 0 21 22">
+                    <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg>
+                </button>
+              </p>
+              <div class="combining-row">
+                <p class="search-item item-adult">
+                  <label for="adult-id">Взрослые:</label>
+                  <button type="button" class="button-minus">
+                    <svg class="minus" width="11" height="3" x="0" y="4">
+                      <rect width="11" height="3" fill="#a9a9a9"/>
+                    </svg>
+                  </button>
+                  <input class="search-input guests-number" id="adult-id" type="text" name="adult-number" value="2" placeholder="0">
+                  <button type="button" class="button-plus">
+                    <svg class="plus" width="11" height="11">
+                      <rect width="11" height="3" fill="#a9a9a9" x="0" y="4"/>
+                      <rect width="3" height="11" fill="#a9a9a9" x="4" y="0"/>
+                    </svg>
+                  </button>
+                </p>
+                <p class="search-item item-children">
+                  <label for="children-id">Дети:</label>
+                  <button type="button" class="button-minus">
+                    <svg class="minus" width="11" height="3" x="0" y="4">
+                      <rect width="11" height="3" fill="#a9a9a9"/>
+                    </svg>
+                  </button>
+                  <input class="search-input guests-number" id="children-id" type="text" name="children-number" value="0" placeholder="0">
+                  <button type="button" class="button-plus">
+                    <svg class="plus" width="11" height="11">
+                      <rect width="11" height="3" fill="#a9a9a9" x="0" y="4"/>
+                      <rect width="3" height="11" fill="#a9a9a9" x="4" y="0"/>
+                    </svg>
+                  </button>
+                </p>
+              </div>
+              <a class="search-button" href="#">Найти</a>
+            </form>
+          </section>
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer index-footer">
         <a class="hashtag" href="#">#visitsedona</a>
         <ul class="footer-social">
           <li>
@@ -145,63 +202,6 @@
         </div>
       </footer>
     </div>
-
-
-    <section class="search">
-      <form class="search-form" action="#" method="post">
-        <p class="search-item search-date">
-          <label for="arrival-id">Дата заезда:</label>
-          <input class="search-input date-input" id="arrival-id" type="text" name="arrival-date" value="24 апреля 2017" placeholder="Укажите дату">
-          <button class="calendar" type="button">
-            <svg width="21" height="22" viewBox="0 0 21 22">
-              <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
-            </svg>
-          </button>
-        </p>
-        <p class="search-item search-date">
-          <label for="departure-id">Дата выезда:</label>
-          <input class="search-input date-input" id="departure-id" type="text" name="departure-date" value="4 июля 2017" placeholder="Укажите дату">
-          <button class="calendar" type="button">
-            <svg width="21" height="22" viewBox="0 0 21 22">
-              <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
-            </svg>
-          </button>
-        </p>
-        <div class="combining-row">
-          <p class="search-item item-adult">
-            <label for="adult-id">Взрослые:</label>
-            <button type="button" class="button-minus">
-              <svg class="minus" width="11" height="3" x="0" y="4">
-                <rect width="11" height="3" fill="#a9a9a9"/>
-              </svg>
-            </button>
-            <input class="search-input guests-number" id="adult-id" type="text" name="adult-number" value="2" placeholder="0">
-            <button type="button" class="button-plus">
-              <svg class="plus" width="11" height="11">
-                <rect width="11" height="3" fill="#a9a9a9" x="0" y="4"/>
-                <rect width="3" height="11" fill="#a9a9a9" x="4" y="0"/>
-              </svg>
-            </button>
-          </p>
-          <p class="search-item item-children">
-            <label for="children-id">Дети:</label>
-            <button type="button" class="button-minus">
-              <svg class="minus" width="11" height="3" x="0" y="4">
-                <rect width="11" height="3" fill="#a9a9a9"/>
-              </svg>
-            </button>
-            <input class="search-input guests-number" id="children-id" type="text" name="children-number" value="0" placeholder="0">
-            <button type="button" class="button-plus">
-              <svg class="plus" width="11" height="11">
-                <rect width="11" height="3" fill="#a9a9a9" x="0" y="4"/>
-                <rect width="3" height="11" fill="#a9a9a9" x="4" y="0"/>
-              </svg>
-            </button>
-          </p>
-        </div>
-        <a class="search-button" href="#">Найти</a>
-      </form>
-    </section>
 
   </body>
 </html>

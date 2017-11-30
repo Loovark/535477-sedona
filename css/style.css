@@ -162,8 +162,7 @@ h3 {
 }
 
 .slogan {
-  max-width: 1200px;
-  min-width: 768px;
+  width: 100%;
   min-height: 216px;
   margin: 0;
   padding: 0;
@@ -340,7 +339,7 @@ h3 {
 
 .intresting {
   width: 100%;
-  min-height: 291px;
+  min-height: 289px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -363,7 +362,7 @@ h3 {
 .search-text {
   margin: 0;
   padding-top: 25px;
-  padding-bottom: 48px;
+  padding-bottom: 46px;
   line-height: 24px;
   display: flex;
   flex-direction: column;
@@ -408,11 +407,10 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 .page-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   min-height: 120px;
   line-height: 26px;
@@ -421,6 +419,11 @@ h3 {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
+}
+
+.index-footer {
+  position: absolute;
+  bottom: 0;
 }
 
 .hashtag {
@@ -512,8 +515,9 @@ h3 {
 
 .search {
   position: absolute;
-  top: 2169px;
-  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  left: 50%;
+  margin-left: -284px;
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .search-form {
@@ -541,6 +545,8 @@ h3 {
 }
 
 .search-date {
+  position: relative;
+  width: 458px;
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
@@ -574,6 +580,7 @@ h3 {
 
 .date-input {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   padding-left: 12px;
   width: 346px;
@@ -587,7 +594,8 @@ h3 {
   border: none;
   background-color: transparent;
   position: absolute;
-  left: 477px;
+  left: 420px;
+  bottom: 5px;
   cursor: pointer;
 }
 
@@ -704,7 +712,8 @@ h3 {
 }
 
 .filter {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   min-height: 217px;
   margin: 0;
   padding: 0;
@@ -717,14 +726,17 @@ h3 {
 }
 
 .filter-form {
+  width: 100%;
   min-height: 217px;
   margin: 0;
   padding: 0 6%;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .left-columns {
+  width: 40%;
   margin: 0;
   padding: 0;
   margin-top: 27px;
@@ -734,6 +746,7 @@ h3 {
 }
 
 .filter-list {
+  width: 50%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -743,9 +756,7 @@ h3 {
 }
 
 .infrastructure {
-  margin: 0;
-  padding: 0;
-  margin-right: 35%;
+  margin-right: 20%;
 }
 
 .filter-title {
@@ -759,8 +770,9 @@ h3 {
 .check-item {
   margin: 0;
   padding: 0;
-  margin-left: 25px;
+  margin-left: 15%;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .checkbox {
@@ -783,6 +795,7 @@ h3 {
   height: 20px;
   border: 2px solid #ffffff;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-label::before {
@@ -793,6 +806,23 @@ h3 {
   height: 23px;
   border: none;
   background-image: url(../img/svg-sedona/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.checkbox:disabled + .checkbox-label::before {
+  border: 2px solid #6a6a6a;
+}
+
+.checkbox:checked:disabled + .checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 27px;
+  height: 23px;
+  border: none;
+  background-image: url(../img/svg-sedona/checkbox-on-blocked.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -809,7 +839,6 @@ h3 {
 .filter-range-title {
   margin-bottom: 11px;
   margin-left: 2px;
-
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -817,13 +846,10 @@ h3 {
 
 .price-controls {
   position: relative;
-
   height: 32px;
   margin-bottom: 20px;
   margin-left: 2px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -833,10 +859,8 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -844,11 +868,9 @@ h3 {
 .price-controls label {
   display: inline-block;
   margin-top: -4px;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -864,11 +886,11 @@ h3 {
 
 .price-controls input {
   width: 50px;
+  height: 26px;
   margin: 0;
-
+  padding: 0;
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
@@ -882,24 +904,20 @@ h3 {
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -927,12 +945,10 @@ h3 {
   height: 36px;
   margin: 0;
   margin-left: 88px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -941,12 +957,11 @@ h3 {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
 .sorting {
-  width: 1200px;
+  width: 100%;
   min-height: 86px;
   margin: 0;
   padding: 0 6%;
@@ -1029,6 +1044,8 @@ h3 {
 }
 
 .hotels {
+  max-width: 1200px;
+  min-width: 768px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1036,6 +1053,7 @@ h3 {
 }
 
 .hotels-list {
+
   margin: 0;
   padding: 0;
   display: flex;
@@ -1054,7 +1072,8 @@ h3 {
 
 
 .hotel-info {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   min-height: 150px;
   margin: 0;
   padding: 0;
@@ -1063,7 +1082,7 @@ h3 {
 }
 
 .hotel-block {
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0 6%;
   display: flex;
@@ -1072,6 +1091,7 @@ h3 {
 }
 
 .info-block {
+  width: 50%;
   min-height: 90px;
   margin: 0;
   margin-left: 30px;
