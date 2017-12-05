@@ -18,7 +18,7 @@
             <li class="menu-item navigation-menu-left"><a href="#">Информация</a></li>
             <li class="menu-item navigation-menu-left"><a href="#">Фото и видео</a></li>
             <li class="menu-item navigation-menu-right"><a href="#">Карта штата</a></li>
-            <li class="menu-item navigation-menu-right"><a href="hotels.html">Гостиницы</a></li>
+            <li class="menu-item navigation-menu-right current-item"><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -29,36 +29,40 @@
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form class="filter-form" action="#" method="post">
             <div class="left-columns">
-              <ul class="filter-list infrastructure">
+              <div class="infrastructure">
                 <h3 class="filter-title">Инфраструктура:</h3>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="pool-checkbox" id="pool-id" checked>
-                  <label class="checkbox-label" for="pool-id">Бассейн</label>
-                </li>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="parking-checkbox" id="parking-id">
-                  <label class="checkbox-label" for="parking-id">Парковка</label>
-                </li>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="wifi-checkbox" id="wifi-id">
-                  <label class="checkbox-label" for="wifi-id">Wi-Fi</label>
-                </li>
-              </ul>
-              <ul class="filter-list type-list">
+                <ul class="filter-list">
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="pool-checkbox" id="pool-id" checked>
+                    <label class="checkbox-label" for="pool-id">Бассейн</label>
+                  </li>
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="parking-checkbox" id="parking-id">
+                    <label class="checkbox-label" for="parking-id">Парковка</label>
+                  </li>
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="wifi-checkbox" id="wifi-id">
+                    <label class="checkbox-label" for="wifi-id">Wi-Fi</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="type-list">
                 <h3 class="filter-title">Тип жилья:</h3>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="hotel-checkbox" id="hotel-id" checked>
-                  <label class="checkbox-label" for="hotel-id">Гостиница</label>
-                </li>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="motel-checkbox" id="motel-id" checked>
-                  <label class="checkbox-label" for="motel-id">Мотель</label>
-                </li>
-                <li class="check-item">
-                  <input class="checkbox" type="checkbox" name="apartments-checkbox" id="apartments-id" checked>
-                  <label class="checkbox-label" for="apartments-id">Апартаменты</label>
-                </li>
-              </ul>
+                <ul class="filter-list">
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="hotel-checkbox" id="hotel-id" checked>
+                    <label class="checkbox-label" for="hotel-id">Гостиница</label>
+                  </li>
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="motel-checkbox" id="motel-id" checked>
+                    <label class="checkbox-label" for="motel-id">Мотель</label>
+                  </li>
+                  <li class="check-item">
+                    <input class="checkbox" type="checkbox" name="apartments-checkbox" id="apartments-id" checked>
+                    <label class="checkbox-label" for="apartments-id">Апартаменты</label>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="filter-range">
               <h3 class="filter-range-title">Стоимость в сутки (Р):</h3>
@@ -77,7 +81,6 @@
             </div>
           </form>
         </section>
-
         <section class="sorting">
           <div class="sorting-container">
             <p class="result">Найдено: 3</p>
@@ -145,7 +148,6 @@
                 </div>
               </div>
             </li>
-
             <li class="hotel-info desert-quail">
               <div class="hotel-block">
                 <img class="hotel-photo" src="img/desert-quail.jpg" alt="Фото гостиницы" width="135" height="90">
@@ -180,7 +182,6 @@
                 </div>
               </div>
             </li>
-
             <li class="hotel-info poco-diablo">
               <div class="hotel-block">
                 <img class="hotel-photo" src="img/poco-diablo.jpg" alt="Фото гостиницы" width="135" height="90">
@@ -217,7 +218,9 @@
       </main>
 
       <footer class="page-footer">
-        <a class="hashtag" href="#">#visitsedona</a>
+        <div class="hashtag-block">
+          <a class="hashtag" href="#">#visitsedona</a>
+        </div>
         <ul class="footer-social">
           <li>
             <a class="social-button" href="#">
@@ -242,6 +245,7 @@
             </a>
         </div>
       </footer>
+
     </div>
   </body>
 </html>
