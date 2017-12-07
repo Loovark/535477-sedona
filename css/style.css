@@ -88,6 +88,10 @@ a {
   margin-right: auto;
 }
 
+.navigation-menu li:nth-child(3) {
+  letter-spacing: 0.5px;
+}
+
 .top-logo {
   position: absolute;
   left: 50%;
@@ -392,6 +396,7 @@ a {
   width: 568px;
   height: 86px;
 
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -426,6 +431,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 588px;
+  max-width: 1200px;
+  min-width: 768px;
 }
 
 .page-footer {
@@ -482,7 +495,7 @@ a {
   align-items: center;
   width: 46px;
   height: 48px;
-  margin: 0;
+  margin: 0 3px;
   padding: 0;
 
   color: #ffffff;
@@ -502,10 +515,6 @@ a {
 
 .social-button:active path {
   fill: #88b6d1;
-}
-
-.facebook {
-  margin: 0 6px;
 }
 
 .footer-copyright {
@@ -538,10 +547,6 @@ a {
 
 .copyright-link:active path {
   fill: #bdbbbc;
-}
-
-iframe {
-  position: relative;
 }
 
 @keyframes move {
@@ -606,8 +611,8 @@ iframe {
 
   width: 458px;
   margin: 0;
-  padding: 0;
   margin-bottom: 29px;
+  padding: 0;
 }
 
 .search-input {
@@ -641,21 +646,28 @@ iframe {
 }
 
 .date-input {
-  width: 334px;
+  display: flex;
+  box-sizing: border-box;
+  width: 346px;
   height: 38px;
   margin: 0;
   margin-left: auto;
   padding: 0;
   padding-left: 12px;
 
+  font-size: 14px;
   text-align: left;
+
 
   cursor: pointer;
 }
 
+.date-input::-ms-clear {
+   display: none;
+}
+
 .date-input:focus {
-  width: 330px;
-  height: 34px;
+  padding-left: 10px;
 }
 
 .calendar {
@@ -971,23 +983,25 @@ iframe {
 
 .price-controls label {
   display: inline-block;
-  margin-top: -4px;
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  vertical-align: middle;
 
   cursor: pointer;
 }
 
-.max-price {
-  margin-left: -10px;
+.price-controls .min-price {
+  width: 90px;
+  margin-left: 65px;
 }
 
-.price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  margin-left: 53px;
 }
 
 .price-controls input {
@@ -1001,6 +1015,7 @@ iframe {
 
   background: none;
   border: none;
+
 }
 
 .range-controls {
@@ -1041,8 +1056,10 @@ iframe {
 }
 
 .range-toggle:hover {
-  width: 6px;
-  height: 6px;
+  background: #ababab;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 
 .range-toggle-min {
@@ -1056,15 +1073,21 @@ iframe {
 .btn-transparent {
   display: flex;
   justify-content: center;
-  width: 136px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 137px;
   height: 36px;
   margin: 0;
-  margin-left: 88px;
+  margin-left: 87px;
+  padding: 0;
 
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
+  vertical-align: middle;
 
   background: transparent;
   border: 2px solid #ffffff;
@@ -1074,9 +1097,45 @@ iframe {
 }
 
 .btn-transparent:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 137px;
+  height: 36px;
+  margin: 0;
+  margin-left: 87px;
+  padding: 0;
+
   color: #000000;
 
   background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.btn-transparent:focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 137px;
+  height: 36px;
+  margin: 0;
+  margin-left: 87px;
+  padding: 0;
+
+  color: #000000;
+
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+  outline: none;
+
+  cursor: pointer;
 }
 
 .sorting {
@@ -1220,7 +1279,7 @@ iframe {
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 0 6%;
+  padding: 15px 6%;
 }
 
 .info-block {
@@ -1229,7 +1288,6 @@ iframe {
   justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
-  min-height: 90px;
   margin: 0;
   margin-left: 30px;
   padding: 0;
@@ -1278,7 +1336,7 @@ iframe {
   padding: 0;
 }
 
-.hotel-type.
+.hotel-type,
 .hotel-price {
   margin: 0;
   padding: 0;

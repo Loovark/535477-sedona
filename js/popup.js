@@ -9,16 +9,17 @@ link.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-if (!guests.value) {
-evt.preventDefault();
-console.log("Нужно ввести количество гостей");
-} else {
-localStorage.setItem(guests.value);
+  if (!guests.value) {
+    evt.preventDefault();
+    console.log("Нужно ввести количество гостей");
+}
+  else {
+    localStorage.setItem(guests.value);
 }
 });
 
 window.addEventListener("keydown", function (evt) {
-if (evt.keyCode === 27) {
-  if (popup.classList.toggle("toggler-content-off"));
-  }
+  if (evt.keyCode === 27) {
+    if (popup.classList.toggle("toggler-content-off"));
+}
 });
