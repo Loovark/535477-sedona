@@ -354,7 +354,9 @@ a {
 .intresting {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   min-height: 289px;
   margin: 0;
@@ -375,14 +377,14 @@ a {
 }
 
 .search-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  width: 70%;
   margin: 0;
+  padding: 0;
   padding-top: 25px;
-  padding-bottom: 46px;
 
+  text-align: center;
+  vertical-align: middle;
   line-height: 24px;
 }
 
@@ -392,6 +394,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   margin: 0;
+  margin-top: auto;
   padding: 0;
   width: 568px;
   height: 86px;
@@ -834,18 +837,22 @@ iframe {
 }
 
 .infrastructure {
-  margin-right: 22%;
+  width: 150px;
+  margin-right: 20%;
+}
+
+.type-list {
+  width: 150px;
 }
 
 .filter-title {
   display: block;
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
+  padding: 0;
 
   font-size: 16px;
   text-align: left;
-  white-space: nowrap;
 }
 
 .filter-list {
@@ -853,14 +860,10 @@ iframe {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 50%;
+  width: inherit;
   margin: 0;
   padding: 0;
-  margin-left: 18%;
-}
-
-.type-list .filter-list {
-  margin-left: 22%;
+  margin-left: 25px;
 }
 
 .check-item {
@@ -870,8 +873,6 @@ iframe {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-
-  white-space: nowrap;
 }
 
 .checkbox {
@@ -884,6 +885,9 @@ iframe {
 
 .checkbox-label {
   position: relative;
+
+  padding: 0;
+  margin: 0;
 }
 
 .checkbox + .checkbox-label::before {
@@ -892,8 +896,8 @@ iframe {
   position: absolute;
   left: -25px;
 
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
 
   border: 2px solid #ffffff;
   border-radius: 3px;
@@ -1275,11 +1279,12 @@ iframe {
 
 .hotel-block {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   margin: 0;
-  padding: 15px 6%;
+  padding: 0 6%;
+  padding-top: 30px;
 }
 
 .info-block {
@@ -1349,7 +1354,7 @@ iframe {
   width: 110px;
   height: 27px;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 14px;
   padding: 0;
 
   font-weight: bold;
@@ -1376,7 +1381,7 @@ iframe {
   height: 27px;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 14px;
 
   font-weight: bold;
   color: #ffffff;
